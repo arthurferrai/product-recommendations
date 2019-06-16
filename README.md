@@ -1,8 +1,7 @@
-# running virtual env
-enter project folder, then run  `. venv/bin/activate`
+# Como rodar o projeto
 
-## saving all libraries
-run command `pip freeze > requirements.txt`
-
-## installing all dependencies
-run command `pip install -r requirements.txt`
+Execute o comando `run.sh`
+Caso queira alterar o IP do servidor e/ou a porta usada, passe como parâmetro posicional:
+```
+run.sh <host> <port>
+```

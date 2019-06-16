@@ -3,8 +3,7 @@ from typing import List
 
 class DBModelBase(object):
     def __init__(self):
-        #raise NotImplemented()
-        pass
+        raise NotImplemented()
 
     def get_customers(self):
         # type: () -> List[dict]

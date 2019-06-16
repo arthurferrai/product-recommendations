@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+echo Using host ${1:-'127.0.0.1'} on port ${2:-3000}
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-export SERVER_NAME=127.0.0.1:3000
-python src/main.py
+python src/main.py ${1:-'127.0.0.1'} ${2:-3000}
+deactivate
