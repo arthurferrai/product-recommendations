@@ -37,7 +37,9 @@ class SQLiteModel(DBModelBase):
                FOREIGN KEY (Customer) REFERENCES Customers(Slug)
             );""")
 
+    # noinspection PyMissingConstructor
     def __init__(self, db_file='base.db'):
+        # type: (str) -> None
         self.db_file = db_file
         self._create_table()
 
@@ -88,7 +90,8 @@ class SQLiteModel(DBModelBase):
             VALUES (datetime('now'), :product, :customer);"""
         self._run_query(query, view_data)
 
-    def get_recommendations(self, product, limit):  # type: (str, int) -> List[dict]
+    def get_recommendations(self, product, limit):
+        # type: (str, int) -> List[dict]
         query = """
             SELECT 
                 Product AS product,

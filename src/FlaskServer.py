@@ -9,7 +9,7 @@ from model import DBModelBase
 
 class FlaskServer(object):
     def __init__(self, model, host, port):
-        # type: (DBModelBase, str, str) -> None
+        # type: (DBModelBase, str, int) -> None
         self.model = model
         self.host = host
         self.port = port

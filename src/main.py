@@ -6,8 +6,8 @@ from model import SQLiteModel
 
 
 def main(host, port):
+    # type: (str, int) -> None
     model = SQLiteModel()
-
     FlaskServer(model, host, port).run()
 
 
