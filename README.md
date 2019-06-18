@@ -1,3 +1,8 @@
+# Requisitos para executar o projeto
+Será necessária uma instalação de Python versão >= 2.7.9 com o 
+pacote `virtualenv` instalado. Caso não tenha o pacote, instale-o
+com o comando `pip install virtualenv`.
+
 # Como rodar o projeto
 
 Execute o comando `./run.sh`
